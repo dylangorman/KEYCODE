@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'momstypewriterregular';
+    src: url('mom___-webfont.woff2') format('woff2'),
+         url('mom___-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: "momstypewriterregular";
+    text-align: center;
+    background-color: white;
+    background-image: url("typeWriter.jpeg");
+    background-repeat: no-repeat;
+}
+.box #eventLocation{
+display: none;
+}
+#welcome {
+   position: relative;
+   top: 300px;
+   left: 50%;
+   transform: translate(-50%, -50%)
+}
+#generator {
+    margin-top: 80px;
+}
+#wrapper { 
+    position:sticky;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    bottom: 0;
+    margin-bottom: 70px;
+}
+.box {
+    border: solid 2px rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 20%;
+    margin: 10px;
+    text-align: center;
+    vertical-align: text-top;
+}
+
+
+
+@media only screen and (max-width: 750px){
+    body {
+        size: 3rem;
+        display: flex;
+        flex-direction: column;
+        /* background-color: white; */
+    background-image: url("typeWriter.jpeg");
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: center;
+    background-attachment: fixed;
+    }
+    .box{
+        font-size: 10px ;
+    } 
+    
+}
+.show{
+    display: none;
+}
+
+@media only screen and (max-width: 450px){
+    #page-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+       background-size: 200px; 
+       background-position: bottom;
+    }
+    #wrapper{
+        flex:100%;
+        flex-direction: column;
+        align-items: center;
+        
+        
+    } 
+
+}
